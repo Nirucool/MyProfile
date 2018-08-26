@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import {FormGroup, Input, Label, Col} from 'reactstrap';
+import {FormGroup,Col} from 'reactstrap';
 import profile from './profile.jpeg';
 import tiaa from './tiaa.png';
 import husky from './husky.png';

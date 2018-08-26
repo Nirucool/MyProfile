@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
-import {FormGroup, Input, Label, Col,Table} from 'reactstrap';
+import {Table} from 'reactstrap';
 import HeaderUser from "./HeaderUser";
 import Footer from "./Footer";
+import image1 from './image14.png'
+import image2 from './image9.png'
+import image3 from './image6.png'
+import image4 from './image.png'
+import image5 from './plag1.png'
+import image6 from './plag2.png'
+import image7 from './plag3.png'
 import YouTube from 'react-youtube';
+import {Carousel} from 'react-responsive-carousel';
 
-//https://www.youtube.com/watch?v=RFNWCvCbQ1E
 class Projects extends Component {
 
     videoOnReady(event) {
-        // access to player in all event handlers via event.target
         event.target.pauseVideo();
     }
 
@@ -16,7 +22,7 @@ class Projects extends Component {
         const opts = {
             height: '250',
             width: '450',
-            playerVars: { // https://developers.google.com/youtube/player_parameters
+            playerVars: {
                 'autoplay': 1
             }
         };
@@ -25,7 +31,40 @@ class Projects extends Component {
                 <HeaderUser/>
                 <form className="container">
                     <div className="container">
-                        <Table  style={{marginTop: '50px',fontSize:'20px',backgroundColor:'lightgrey',color:'grey'}}>
+                        <div className="container my-carousel" style={{border:'thin'}}>
+                            <Carousel axis="horizontal" showArrows={true}>
+
+                                <div>
+                                    <img src={image1} />
+                                    <p className="legend">Robotics Motion Planning using PRM and RRT Algorithms for Puma560</p>
+                                </div>
+                                <div>
+                                    <img src={image2} />
+                                    <p className="legend">Robotics Motion Planning using PRM Algorithm for Puma560</p>
+                                </div>
+                                <div>
+                                    <img src={image3} />
+                                    <p className="legend">Design & Share React Redux Web Application</p>
+                                </div>
+                                <div>
+                                    <img src={image4} />
+                                    <p className="legend">Design & Share React Redux Web Application</p>
+                                </div>
+                                <div>
+                                    <img src={image5} />
+                                    <p className="legend">Plagiarism Detection using Abstract Syntax Tree Algorithm using Antlr Python Grammar </p>
+                                </div>
+                                <div>
+                                    <img src={image6} />
+                                    <p className="legend">Plagiarism Detection using Abstract Syntax Tree Algorithm using Antlr Python Grammar</p>
+                                </div>
+                                <div>
+                                    <img src={image7} />
+                                    <p className="legend">Plagiarism Detection using Abstract Syntax Tree Algorithm using Antlr Python Grammar</p>
+                                </div>
+                            </Carousel>
+                        </div>
+                        <Table  style={{marginTop: '50px',fontSize:'15px',backgroundColor:'lightsteelblue',color:'black'}}>
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -34,7 +73,7 @@ class Projects extends Component {
                                 <th>Videos</th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody style={{fontSize:'15px'}}>
                             <tr>
                                 <th scope="row">1</th>
                                 <td> Puma 560 Path Planning using RRT and PRM</td>
@@ -68,31 +107,6 @@ class Projects extends Component {
                             </tr>
                             </tbody>
                         </Table>
-                  {/* <FormGroup row>
-                       <Label style={{marginTop: '200px',marginLeft:'70px',fontWeight:'bold',fontSize:'20px',color:'grey'}}>Projects</Label>
-                   </FormGroup>
-                    <FormGroup row>
-                        <Col sm={4}>
-                         Puma 560 Path Planning using RRT and PRM
-                        </Col>
-                        <Col sm={4} style={{marginTop:'70px',marginLeft: '900px'}}>
-                            <YouTube
-                                videoId="RFNWCvCbQ1E"
-                                opts={opts}
-                                onReady={this.videoOnReady}/>
-                        </Col>
-                    </FormGroup>
-                        <FormGroup row>
-                            <Col sm={4}><Label style={{marginTop: '200px',marginLeft:'70px',fontWeight:'bold',fontSize:'20px',color:'grey'}}>Projects</Label>
-                                Puma 560 Path Planning using RRT and PRM
-                            </Col>
-                            <Col sm={4} style={{marginTop:'70px',marginLeft: '900px'}}>
-                                <YouTube
-                                    videoId="RFNWCvCbQ1E"
-                                    opts={opts}
-                                    onReady={this.videoOnReady}/>
-                            </Col>
-                        </FormGroup>*/}
                     </div>
                 </form>
                 <div>
