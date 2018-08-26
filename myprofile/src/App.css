@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+    padding-bottom: 100px;/* height of your footer */
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.centerText{
+  text-align: center;
+  width: 500px;
+}
+.icon {
+    background: white;
+    border-radius: 50px;
+    color: black;
+    fill: black;
+    :hover;
+    background: black;
+    color: white ;
+    fill: white;
+}
+.facebook:hover{
+    color: #3B579D;
+    fill: #3B579D;
+}
+.github {
+    background: white;
+    color: black;
+    fill: black;
+}
+.github:hover{
+
+   background: #6441a5;
+   color: white;
+   fill: white;
+}
+
+.linkedin:hover{
+    color: #007BB6;
+    fill: #007BB6;
+}
+a {
+    display: inline-block;
+    position: relative; / / IE8
+    height: 150px; / / IE8
+    width: 150px;
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+}
+.navbar-nav{
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.my-carousel {
+    width: 700px;
+    height: 350px;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0 auto;
+}
+img.foo {
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+.imgPreview {
+    margin: 5px 15px;
+    height: 200px;
+    width: 200px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    border-left: 5px solid gray;
+    border-right: 5px solid gray;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+    margin-left: 42%;}
+.img-profile{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
