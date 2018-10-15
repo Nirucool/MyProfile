@@ -15,7 +15,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Router history={history}>
-        <div>
+        <div style={{backgroundColor:'black'}}>
         <Route exact path='/' component={App}/>
             <Route path='/home' component={Home}/>
             <Route path='/contact' component={Contact}/>

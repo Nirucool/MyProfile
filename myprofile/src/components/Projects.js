@@ -98,7 +98,7 @@ class Projects extends Component {
                                 <td>Design & Share Web Application</td>
                                 <td><a href="https://github.com/Nirucool/DesignAndShareSpringBoot">Design & Share Web App BackEnd</a>
                                     <a href="https://github.com/Nirucool/DesignAndShareUI">Design & Share Web App FrontEnd</a>
-                                    <a href="https://designandshare.herokuapp.com">https://designandshare.herokuapp.com</a></td>
+                                    <a href="https://designandshare.herokuapp.com">https://www.designandshare.info</a></td>
 
                                 <td><YouTube
                                     videoId="EF6TqfMw1lI"
