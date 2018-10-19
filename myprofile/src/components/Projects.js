@@ -31,7 +31,7 @@ class Projects extends Component {
                 <HeaderUser/>
                 <form className="container">
                     <div className="container">
-                        <div className="container my-carousel" style={{border:'thin'}}>
+                        <div className="container my-carousel" style={{border:'thin', fontSize: '12px'}}>
                             <Carousel axis="horizontal" showArrows={true}>
 
                                 <div>
@@ -64,16 +64,16 @@ class Projects extends Component {
                                 </div>
                             </Carousel>
                         </div>
-                        <Table  style={{marginTop: '50px',fontSize:'15px',backgroundColor:'lightsteelblue',color:'black'}}>
+                        <Table  style={{marginTop: '50px',fontSize:'15px',fontFamily:'monospace',backgroundColor:'lightsteelblue',color:'black'}}>
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Projects</th>
-                                <th>Github</th>
-                                <th>Videos</th>
+                                <th style={{textAlign:'center'}}>Projects</th>
+                                <th style={{textAlign:'center'}}>Github</th>
+                                <th style={{textAlign:'center'}}>Videos</th>
                             </tr>
                             </thead>
-                            <tbody style={{fontSize:'15px'}}>
+                            <tbody style={{fontSize:'12px'}}>
                             <tr>
                                 <th scope="row">1</th>
                                 <td> Puma 560 Path Planning using RRT and PRM</td>
@@ -97,8 +97,8 @@ class Projects extends Component {
                                 <th scope="row">3</th>
                                 <td>Design & Share Web Application</td>
                                 <td><a href="https://github.com/Nirucool/DesignAndShareSpringBoot">Design & Share Web App BackEnd</a>
-                                    <a href="https://github.com/Nirucool/DesignAndShareUI">Design & Share Web App FrontEnd</a>
-                                    <a href="https://designandshare.herokuapp.com">https://www.designandshare.info</a></td>
+                                    <a href="https://github.com/Nirucool/DesignAndShareUI">Design & Share Web App FrontEnd</a><br/>
+                                    <a href="http://www.designandshare.info">http://www.designandshare.info</a></td>
 
                                 <td><YouTube
                                     videoId="EF6TqfMw1lI"
