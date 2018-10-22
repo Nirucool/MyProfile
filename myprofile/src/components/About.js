@@ -5,173 +5,205 @@ import tiaa from './tiaa.png';
 import husky from './husky.png';
 import tcs from './tcs.jpg';
 import nyl from './nyl.png';
-import neu from './NEU-logo.png';
 import HeaderUser from "./HeaderUser";
 import Footer from "./Footer";
 import interest from "./interest.jpg";
 import goal from './ai.jpeg';
+import Zoom from 'react-reveal/Zoom';
 
 class About extends Component {
     render() {
         return (
             <div className="main-container">
                 <HeaderUser/>
+                <div className="imgProfilePreview">
+                    <img src={profile}/>
+                    <Zoom left>
+                        <h2><span style={{color: 'lightyellow', fontFamily: 'monospace'}}>Hi, I am</span></h2>
+                        <h2><span style={{color: 'lightyellow', fontSize: '40px'}}><br/>Nirupama Sharma</span></h2>
+                        <h2><span
+                            style={{color: 'cyan', fontSize: '16px', fontWeight: 'bold', fontFamily: 'monospace'}}><br/><br/>
+                            I am a Full Stack Software Engineer with 4 years of work experience.<br/>
+                            I specialize in the development of scalable web and enterprise applications <br/>
+                            using Java, Python, React, Vue.js, MongoDB, PostgreSQL, MySQL, REST API etc.<br/>
+                            I am a Master of Science in Computer Science student at<br/>
+                            Northeastern University, Boston (Expected Graduation: December 2019),<br/>
+                            currently working as Software Engineer Co-op/Intern at New York Life(R & D).
+                        </span></h2>
+                    </Zoom>
+                </div>
+
                 <form className="container">
-                    <div className="imgPreview">
-                        <img className="img-profile" src={profile}/>
-                    </div>
-                    <FormGroup row style={{fontStyle: 'oblique', color: 'dodgerblue', fontFamily: 'monospace'}}>
-                        <Col sm={4}>
-                        </Col>
-                        <Col sm={1}> <img style={{height: '60px', width: '60px'}} src={neu}/></Col>
-                        <Col sm={4}>
+                    <Zoom left>
+                        <FormGroup row style={{marginTop: '50px', fontSize: '20px', color: 'mediumseagreen'}}>
+                            <Col sm={4}>
+                            </Col>
+                            Here's What I have done so far!
+                        </FormGroup>
+                    </Zoom>
+                    <Zoom left>
+                        <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
+                            <Col sm={4}>
+                                <img className="foo" style={{height: '250px', width: '350px'}} src={nyl}/>
+                            </Col>
+                            <Col sm={8}>
+                                <p style={{color: 'blue'}}>New York Life</p>
+                                <p style={{color: 'green'}}>Software Engineer Co-op/Intern</p>
+                                <p style={{color: 'plum'}}>June 2018-December 2018</p>
+                                I am currently working as Software Engineer Co-op/Intern at New York Life Insurance
+                                Company,
+                                New York.
+                                At New York Life I am working on a web application to automate changes in nylinsure.com
+                                domain websites like <a
+                                href="https://ama.nylinsure.com/">https://ama.nylinsure.com/</a> using frameworks like
+                                Spring MVC and Hibernate. I have integrated Keycloak with Spring Security for user
+                                authentication. I am working with React Js and Redux Js for frontend and
+                                PostgreSQL for backend.
+                            </Col>
+                        </FormGroup>
 
-                            Master of Science in Computer Science student at Northeastern University, Boston (Expected
-                            Graduation: December 2019)
-                        </Col>
-                    </FormGroup>
-                    <FormGroup row style={{marginTop: '50px', fontSize: '15px', color: 'mediumseagreen'}}>
-                        <Col sm={4}>
-                        </Col>
-                        Here's What I have done so far!
-                    </FormGroup>
-
-                    <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
-                        <Col sm={4}>
-                            <img className="foo" style={{height: '250px', width: '350px'}} src={nyl}/>
-                        </Col>
-                        <Col sm={8}>
-                            <p style={{color: 'blue'}}>New York Life</p>
-                            <p style={{color: 'green'}}>Software Engineer Co-op/Intern</p>
-                            <p style={{color: 'plum'}}>June 2018-December 2018</p>
-                            I am currently working as Software Engineer Co-op/Intern at New York Life Insurance Company,
-                            New York.
-                            At New York Life I am working on a web application to automate changes in nylinsure.com
-                            domain websites like <a
-                            href="https://ama.nylinsure.com/">https://ama.nylinsure.com/</a> using frameworks like
-                            Spring MVC and Hibernate. I have integrated Keycloak with Spring Security for user
-                            authentication. I am working with React Js and Redux Js for frontend and
-                            MongoDB(mLab) for backend.
-
-                        </Col>
-                    </FormGroup>
-                    <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
-                        <Col sm={4}></Col>
-                        <Label className="imgDesignPreview">React</Label>
-                        <Label className="imgDesignPreview">Redux</Label>
-                        <Label className="imgDesignPreview">MongoDB</Label>
-                        <Label className="imgDesignPreview">Vue.js</Label>
-                        <Label className="imgDesignPreview">Spring Boot</Label>
-                        <Label className="imgDesignPreview">Java</Label>
-                        <Label className="imgDesignPreview">PostgreSQL</Label>
-                        <Label className="imgDesignPreview">Spring Security</Label></FormGroup>
-
-                    <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
-                        <Col sm={4}>
-                            <img className="foo" style={{height: '250px', width: '350px'}} src={husky}/>
-                        </Col>
-                        <Col sm={8}>
-                            <p style={{color: 'blue'}}>Northeastern University, Boston</p>
-                            <p style={{color: 'green'}}>Graduate Computer Science Student</p>
-                            <p style={{color: 'plum'}}>September 2017-December 2019</p>
-                            I am a Computer Science student at Northeastern University, Boston. I am doing my masters
-                            with specialization in Artificial Intelligence.
-                            I have studied Robotics Science and Systems, Algorithms, Managing Software Development and
-                            Programming Design Paradigm.
-                            I look forward to enroll in Natural Language Processing and Data Mining in my next semester.
-                        </Col>
-                    </FormGroup>
-                    <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
-                        <Col sm={4}></Col>
-                        <Label className="imgDesignPreview">Racket</Label>
-                        <Label className="imgDesignPreview">Java</Label>
-                        <Label className="imgDesignPreview">MATLAB</Label>
-                        <Label className="imgDesignPreview">ANTLR</Label>
-                        <Label className="imgDesignPreview">Spring Boot</Label>
-                        <Label className="imgDesignPreview">MySQL</Label>
-                        <Label className="imgDesignPreview">JGit</Label>
-                    </FormGroup>
-                    <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
-                        <Col sm={4}>
-                            <img className="foo" style={{height: '250px', width: '350px'}} src={tiaa}/>
-                        </Col>
-                        <Col sm={8}>
-                            <p style={{color: 'blue'}}>TIAA (Teachers' Insurance and Annuity Association of America),
-                                Mumbai</p>
-                            <p style={{color: 'green'}}>Software Engineer</p>
-                            <p style={{color: 'plum'}}>October 2016-June 2018</p>
-                            At TIAA, I worked on the file hub application using Spring Boot, Spring MVC and Hibernate,
-                            Angular JS and Oracle Coherence(Grid Computing).
-                        </Col>
-                    </FormGroup>
-                    <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
-                        <Col sm={4}></Col>
-                        <Label className="imgDesignPreview">AngularJS</Label>
-                        <Label className="imgDesignPreview">Java</Label>
-                        <Label className="imgDesignPreview">Spring MVC</Label>
-                        <Label className="imgDesignPreview">Mule ESB</Label>
-                        <Label className="imgDesignPreview">Oracle Coherence</Label>
-                        <Label className="imgDesignPreview">Python</Label>
-                        <Label className="imgDesignPreview">Mockito</Label>
-                    </FormGroup>
-                    <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
-                        <Col sm={4}>
-                            <img className="foo" style={{height: '250px', width: '350px'}} src={tcs}/>
-                        </Col>
-                        <Col sm={8}>
-                            <p style={{color: 'blue'}}>Tata Consultancy Services, Pune</p>
-                            <p style={{color: 'green'}}>Software Engineer</p>
-                            <p style={{color: 'plum'}}>March 2013-September 2016</p>
-                            I worked on a number of web applications for Barclays, Athene Annuity and Vodafone during my
-                            stint at TCS.
-                            Majority of my work was in Java/ J2EE technologies like JSF, Spring, Hibernate, Struts etc.
-                        </Col>
-                    </FormGroup>
-                    <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
-                        <Col sm={4}></Col>
-                        <Label className="imgDesignPreview">JSF</Label>
-                        <Label className="imgDesignPreview">Java</Label>
-                        <Label className="imgDesignPreview">Spring MVC</Label>
-                        <Label className="imgDesignPreview">JSP</Label>
-                        <Label className="imgDesignPreview">Struts</Label>
-                        <Label className="imgDesignPreview">IBM WPS</Label>
-                        <Label className="imgDesignPreview">JUnit</Label>
-                        <Label className="imgDesignPreview">JMS</Label>
-                        <Label className="imgDesignPreview">EJB</Label>
-                    </FormGroup>
-                    <FormGroup row style={{marginTop: '50px', fontSize: '20px', color: 'mediumseagreen'}}>
-                        <Col sm={4}>
-                        </Col>
-                        What interests me?
-                    </FormGroup>
-                    <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
-                        <Col sm={4}>
-                            <img className="foo" style={{height: '250px', width: '350px'}} src={interest}/>
-                        </Col>
-                        <Col sm={8}>
-                            I like exploring the power of latest technologies in web development. React JS and Redux JS are
-                            a new addition to my skill set. I like doing things outside main stream work too. I developed a Car Pooling application for
-                            TIAA, Mumbai employees to share rides with office colleagues using Spring Boot and MongoDB. I am working on a personal project to help small landscaping businesses thrive by creating a web application where they can showcase their work and end users can book them if they like their work. I also like working on projects related to Natural Language Processing
-                            and Machine Learning.
-                        </Col>
-                    </FormGroup>
-                    <FormGroup row style={{marginTop: '50px', fontSize: '20px', color: 'mediumseagreen'}}>
-                        <Col sm={4}>
-                        </Col>
-                        Goals and Vision!
-                    </FormGroup>
-                    <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
-                        <Col sm={4}>
-                            <img className="foo" style={{height: '250px', width: '350px'}} src={goal}/>
-                        </Col>
-                        <Col sm={8}>
-                            I like working on new technologies and frameworks. I love designing applications as much as I love programming. I would like to work on bulky customer facing applications.
-                            I am curious about the development of
-                            AI
-                            enabled websites and I look forward to work on them. I like taking new challenges and always
-                            look forward to work with intelligent and innovative minds.
-                        </Col>
-                    </FormGroup>
+                        <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
+                            <Col sm={4}></Col>
+                            <Col sm={8}>
+                                <Label className="imgDesignPreview">React</Label>
+                                <Label className="imgDesignPreview">Redux</Label>
+                                <Label className="imgDesignPreview">Vue.js</Label>
+                                <Label className="imgDesignPreview">Spring Boot</Label>
+                                <Label className="imgDesignPreview">Java</Label>
+                                <Label className="imgDesignPreview">REST API</Label>
+                                <Label className="imgDesignPreview">PostgreSQL</Label>
+                                <Label className="imgDesignPreview">Spring Security</Label></Col></FormGroup>
+                    </Zoom>
+                    <Zoom left>
+                        <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
+                            <Col sm={4}>
+                                <img className="foo" style={{height: '250px', width: '350px'}} src={husky}/>
+                            </Col>
+                            <Col sm={8}>
+                                <p style={{color: 'blue'}}>Northeastern University, Boston</p>
+                                <p style={{color: 'green'}}>Graduate Computer Science Student</p>
+                                <p style={{color: 'plum'}}>September 2017-December 2019</p>
+                                I am a Computer Science student at Northeastern University, Boston. I am doing my
+                                masters
+                                with specialization in Artificial Intelligence.
+                                I have studied Robotics Science and Systems, Algorithms, Managing Software Development
+                                and
+                                Programming Design Paradigm.
+                            </Col>
+                        </FormGroup>
+                        <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
+                            <Col sm={4}></Col>
+                            <Col sm={8}>
+                                <Label className="imgDesignPreview">Racket</Label>
+                                <Label className="imgDesignPreview">Java</Label>
+                                <Label className="imgDesignPreview">MATLAB</Label>
+                                <Label className="imgDesignPreview">ANTLR</Label>
+                                <Label className="imgDesignPreview">Spring Boot</Label>
+                                <Label className="imgDesignPreview">MySQL</Label>
+                                <Label className="imgDesignPreview">JGit</Label></Col>
+                        </FormGroup>
+                    </Zoom>
+                    <Zoom left>
+                        <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
+                            <Col sm={4}>
+                                <img className="foo" style={{height: '250px', width: '350px'}} src={tiaa}/>
+                            </Col>
+                            <Col sm={8}>
+                                <p style={{color: 'blue'}}>TIAA (Teachers' Insurance and Annuity Association of
+                                    America),
+                                    Mumbai</p>
+                                <p style={{color: 'green'}}>Software Engineer</p>
+                                <p style={{color: 'plum'}}>October 2016-June 2018</p>
+                                At TIAA, I worked on the file hub application using Spring Boot, Spring MVC and
+                                Hibernate,
+                                Angular JS and Oracle Coherence(Grid Computing).
+                            </Col>
+                        </FormGroup>
+                        <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
+                            <Col sm={4}></Col>
+                            <Col sm={8}>
+                                <Label className="imgDesignPreview">AngularJS</Label>
+                                <Label className="imgDesignPreview">Java</Label>
+                                <Label className="imgDesignPreview">Spring MVC</Label>
+                                <Label className="imgDesignPreview">Mule ESB</Label>
+                                <Label className="imgDesignPreview">MongoDB</Label>
+                                <Label className="imgDesignPreview">Oracle Coherence</Label>
+                                <Label className="imgDesignPreview">Python</Label>
+                                <Label className="imgDesignPreview">Mockito</Label></Col>
+                        </FormGroup></Zoom>
+                    <Zoom left>
+                        <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
+                            <Col sm={4}>
+                                <img className="foo" style={{height: '250px', width: '350px'}} src={tcs}/>
+                            </Col>
+                            <Col sm={8}>
+                                <p style={{color: 'blue'}}>Tata Consultancy Services, Pune</p>
+                                <p style={{color: 'green'}}>Software Engineer</p>
+                                <p style={{color: 'plum'}}>March 2013-September 2016</p>
+                                I worked on a number of web applications for Barclays, Athene Annuity and Vodafone
+                                during my
+                                stint at TCS.
+                                Majority of my work was in Java/ J2EE technologies like JSF, Spring, Hibernate, Struts
+                                etc.
+                            </Col>
+                        </FormGroup>
+                        <FormGroup row style={{fontFamily: 'monospace', fontSize: '12px'}}>
+                            <Col sm={4}></Col>
+                            <Label className="imgDesignPreview">JSF</Label>
+                            <Label className="imgDesignPreview">Java</Label>
+                            <Label className="imgDesignPreview">Spring MVC</Label>
+                            <Label className="imgDesignPreview">JSP</Label>
+                            <Label className="imgDesignPreview">Struts</Label>
+                            <Label className="imgDesignPreview">IBM WPS</Label>
+                            <Label className="imgDesignPreview">JUnit</Label>
+                            <Label className="imgDesignPreview">JMS</Label>
+                            <Label className="imgDesignPreview">EJB</Label>
+                        </FormGroup></Zoom>
+                    <Zoom left>
+                        <FormGroup row style={{marginTop: '50px', fontSize: '20px', color: 'mediumseagreen'}}>
+                            <Col sm={4}>
+                            </Col>
+                            What interests me?
+                        </FormGroup>
+                        <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
+                            <Col sm={4}>
+                                <img className="foo" style={{height: '250px', width: '350px'}} src={interest}/>
+                            </Col>
+                            <Col sm={8}>
+                                I like exploring the power of latest technologies in web development. React JS and Redux
+                                JS are
+                                a new addition to my skill set. I like doing things outside main stream work too. I
+                                developed a Car Pooling application for
+                                TIAA, Mumbai employees to share rides with office colleagues using Spring Boot and
+                                MongoDB to avoid Mumbai traffic and to save commute time. I am working on a personal
+                                project to help small landscaping businesses thrive by creating a web application where
+                                they can showcase their work and end users can book them if they like their work and
+                                price quotes. I also like working on projects related to Natural Language Processing and
+                                Machine Learning.
+                            </Col>
+                        </FormGroup>
+                    </Zoom>
+                    <Zoom left>
+                        <FormGroup row style={{marginTop: '50px', fontSize: '20px', color: 'mediumseagreen'}}>
+                            <Col sm={4}>
+                            </Col>
+                            Goals and Vision!
+                        </FormGroup>
+                        <FormGroup row style={{fontSize: '15px', color: 'grey', textAlign: 'justify'}}>
+                            <Col sm={4}>
+                                <img className="foo" style={{height: '250px', width: '350px'}} src={goal}/>
+                            </Col>
+                            <Col sm={8}>
+                                I like learning new languages and frameworks. I love designing applications as much as I
+                                love programming.
+                                I am curious about the development of
+                                AI
+                                enabled websites and I look forward to work on customer facing AI applications. I like
+                                taking new challenges and always
+                                look forward to work with intelligent and innovative minds.
+                            </Col>
+                        </FormGroup>
+                    </Zoom>
                     <FormGroup row style={{marginTop: '50px', fontSize: '15px', color: 'lightyellow'}}>
 
                         I code using these...
