@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {FormGroup, Col, Label} from 'reactstrap';
-import profile from './profile.png';
+import profile from './pic.jpg';
 import tiaa from './tiaa.png';
 import husky from './husky.png';
 import tcs from './tcs.jpg';
@@ -10,17 +10,34 @@ import HeaderUser from "./HeaderUser";
 import Footer from "./Footer";
 import interest from "./interest.jpg";
 import goal from './ai.jpeg';
+import {Typography, Card, CardMedia, CardContent} from '@material-ui/core';
+import Slide from 'react-reveal/Slide';
+import Rotate from 'react-reveal/Rotate';
 
 class Home extends Component {
     render() {
         return (
             <div className="main-container">
                 <HeaderUser/>
+                <div className="imgProfilePreview">
+                    <img src={profile}/>
+                    <Rotate top left>
+                    <h2><span style={{color:'lightyellow',fontFamily:'monospace'}}>Hi, I am</span></h2>
+                    <h2><span style={{color:'lightyellow',fontSize:'40px'}}><br/>Nirupama Sharma</span></h2>
+                        <h2><span style={{color:'white',fontSize:'16px',fontWeight:'bold'}}><br/><br/>
+                            I am a Full Stack Software Engineer with 4 years of work experience.<br/>
+                            I specialize in the development of scalable web applications <br/>
+                            using Java, Python, React, Vue.js, MongoDB, MySQL, REST API etc.<br/>
+                            I am a Master of Science in Computer Science student at<br/>
+                            Northeastern University, Boston (Expected Graduation: December 2019),<br/>
+                            currently working as Software Engineer Co-op/Intern at New York Life(R & D).
+                        </span></h2>
+                    </Rotate>
+
+                </div>
                 <form className="container">
-                    <div className="imgPreview">
-                        <img className="img-profile" src={profile}/>
-                    </div>
-                    <FormGroup row style={{fontStyle: 'oblique', color: 'dodgerblue', fontFamily: 'monospace'}}>
+
+                   {/* <FormGroup row style={{fontStyle: 'oblique', color: 'dodgerblue', fontFamily: 'monospace'}}>
                         <Col sm={4}>
                         </Col>
                         <Col sm={1}> <img style={{height: '60px', width: '60px'}} src={neu}/></Col>
@@ -29,8 +46,8 @@ class Home extends Component {
                             Master of Science in Computer Science student at Northeastern University, Boston (Expected
                             Graduation: December 2019)
                         </Col>
-                    </FormGroup>
-                    <FormGroup row style={{marginTop: '50px', fontSize: '15px', color: 'mediumseagreen'}}>
+                    </FormGroup>*/}
+                    <FormGroup row style={{marginTop: '50px', fontSize: '20px', color: 'mediumseagreen'}}>
                         <Col sm={4}>
                         </Col>
                         Here's What I have done so far!
