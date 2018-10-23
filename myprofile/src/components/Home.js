@@ -16,26 +16,33 @@ class Home extends Component {
         return (
             <div className="main-container">
                 <HeaderUser/>
-                <div className="imgProfilePreview">
-                    <img src={profile}/>
-                    <Zoom left>
-                        <h2><span style={{color: 'lightyellow', fontFamily: 'monospace'}}>Hi, I am</span></h2>
-                        <h2><span style={{color: 'lightyellow', fontSize: '40px'}}><br/>Nirupama Sharma</span></h2>
-                        <h2><span
-                            style={{color: 'cyan', fontSize: '16px', fontWeight: 'bold', fontFamily: 'monospace'}}><br/><br/>
-                            I am a Full Stack Software Engineer with 4 years of work experience.<br/>
-                            I specialize in the development of scalable web and enterprise applications <br/>
-                            using Java, Python, React, Vue.js, MongoDB, PostgreSQL, MySQL, REST API etc.<br/>
-                            I am a Master of Science in Computer Science student at<br/>
-                            Northeastern University, Boston (Expected Graduation: December 2019),<br/>
-                            currently working as Software Engineer Co-op/Intern at New York Life(R & D).
-                        </span></h2>
-                    </Zoom>
-                </div>
 
-                <form className="container">
+                <form className="container" style={{marginTop:'50px'}}>
+                    <FormGroup row>
+                        <Col sm={7}>
+                            <Zoom left>
+                                <h2><span style={{color: 'lightyellow', fontFamily: '"Chronicle Display Bold",Georgia,serif',fontSize: '40px'}}>Hey, I'm Nirupama</span></h2>
+                                <h2><span
+                                    style={{color: 'grey', fontSize: '16px', fontWeight: 'bold',textAlign: 'justify'}}><br/>
+                            <p style={{display:'block'}}>I am a Full Stack Software Engineer with 4 years of work experience.
+                            I specialize in the development of scalable web and enterprise applications
+                            using Java, Python, React, Vue.js, MongoDB, PostgreSQL, MySQL, REST API etc.
+                            I am a Master of Science in Computer Science student at
+                            Northeastern University, Boston (Expected Graduation: December 2019),
+                                currently working as Software Engineer Co-op/Intern at New York Life(R & D).</p>
+                        </span></h2>
+
+                            </Zoom>
+                        </Col>
+                        <Col sm={3}>
+                        <div style={{marginTop:'30px'}} className="imgProfilePreview">
+                        <img  className="imgPic" src={profile}/>
+                        </div></Col>
+                    </FormGroup>
+                    <hr/>
+
                     <Zoom left>
-                        <FormGroup row style={{marginTop: '50px', fontSize: '20px', color: 'mediumseagreen'}}>
+                        <FormGroup row style={{marginTop: '100px', fontSize: '20px', color: 'mediumseagreen'}}>
                             <Col sm={4}>
                             </Col>
                             Here's What I have done so far!
