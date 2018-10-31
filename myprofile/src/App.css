@@ -178,3 +178,11 @@ img.foo {
     border-radius: 150px;
 }
 
+
+.table td, .table th {
+    border-width: 0;
+    border-bottom-style: hidden;
+    border-spacing:0px;
+    border-collapse: collapse;
+    border-top:0px;
+}
